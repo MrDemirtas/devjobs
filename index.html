@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/odev.css" />
+    <script src="assets/js/odev.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./assets/img/header-background.svg" class="background-image" />
+      <a href="/"><img src="./assets/img/devjobs.svg" /></a>
+      <label><img src="./assets/img/sun.svg" /><img src="" /><input class="switch" type="checkbox" /><img src="./assets/img/moon.svg" /></label>
+    </div>
+
+    <div class="container">
+      <form action="#">
+        <div class="inputParts">
+          <div class="filterPart">
+            <img src="assets/img/filter-img.png" />
+            <input type="text" placeholder="Filter by title, companies, expertise…" class="filterTitle" />
+          </div>
+          <div class="filterLocationPart">
+            <img src="assets/img/location-img.png" />
+            <select class="filterLocation">
+              <option value="">Filter by location</option>
+            </select>
+          </div>
+          <div class="searching">
+            <div class="checkbox-content">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="checkboxLabel">Full Time <span class="onlyText">Only</span></label>
+            </div>
+            <button class="searchBtn">Search</button>
+            <button class="filterBtn"><img src="./assets/img/filter-logo.svg" /></button>
+            <button class="smSearchBtn"><img src="./assets/img/search.svg" /></button>
+          </div>
+        </div>
+      </form>
+
+      <div class="card-contents"></div>
+    </div>
+    <div class="footer hidden">
+      <div class="footer-contents">
+        <div class="jobTitleFooter">
+          <span class="jobTitleFooterText">Senior Software Engineer</span>
+          <span class="jobTitleFooterSubText">So Digital Inc.</span>
+        </div>
+        <button class="applyNowBtn">Apply Now</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-inner">
+        <select class="filterLocationModal">
+          <option value="">Filter by location</option>
+        </select>
+        <div class="checkbox-content">
+          <input type="checkbox" class="checkboxModal" id="checkboxModal" />
+          <label for="checkboxModal" class="checkboxLabel">Full Time <span class="onlyText">Only</span></label>
+        </div>
+        <button class="searchBtnModal">Search</button>
+      </div>
+    </div>
+  </body>
+</html>
