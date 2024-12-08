@@ -166,4 +166,5 @@ init({}).then((response) => {
   });
 });
 
+//tıklama eventi ile dark mode çalışır.
 themeChange.addEventListener("click", darkMode);
